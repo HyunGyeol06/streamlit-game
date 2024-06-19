@@ -17,9 +17,9 @@ def find_game(
     )
 
     messages = [
-        {"role": "system", "content": "You know every game in the world. Please find a game for me."},
+        {"role": "system", "content": "You know every game in the world. Please find one to three games for me."},
         {"role": "system",
-         "content": "Don't Let me know fake game. Let me know only real game. Answer only the name of the game."},
+         "content": "Don't Let me know fake games. Let me know only real games. And explain the games to me."},
         {"role": "user",
          "content": f"게임을 추천해주세요. 장르는 {genre}, 연령층은 {age}, 무료인 게임만 추천해주세요." if is_free else f"게임을 추천해주세요. 장르는 {genre}, 시대는 {age}입니다."}
     ]
